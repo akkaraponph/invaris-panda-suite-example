@@ -1,0 +1,5 @@
+# Independent application repositories, kept outside the root harness history.
+kramtone-client
+kramtone-client-remaster
+kramtone-service
+kramtone-service-remaster

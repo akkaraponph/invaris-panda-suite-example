@@ -1,0 +1,28 @@
+{
+  "version": "invaris.dev/v1alpha1",
+  "name": "kramtone-remaster-workspace",
+  "steps": [],
+  "guards": [
+    {
+      "id": "frontend-working-tree-whitespace",
+      "program": "git",
+      "args": ["-C", "kramtone-client-remaster", "diff", "--check"]
+    },
+    {
+      "id": "frontend-index-whitespace",
+      "program": "git",
+      "args": ["-C", "kramtone-client-remaster", "diff", "--cached", "--check"]
+    },
+    {
+      "id": "backend-working-tree-whitespace",
+      "program": "git",
+      "args": ["-C", "kramtone-service-remaster", "diff", "--check"]
+    },
+    {
+      "id": "backend-index-whitespace",
+      "program": "git",
+      "args": ["-C", "kramtone-service-remaster", "diff", "--cached", "--check"]
+    }
+  ],
+  "challenges": []
+}
